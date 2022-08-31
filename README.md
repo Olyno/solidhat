@@ -9,6 +9,15 @@ This fork includes in particular:
  - A security patch for templates
  - Supporting multiple package managers (npm, yarn and pnpm)
 
+## Usage
+
+Create a new project:
+
+```bash
+npx create-solidhat # or pnpm create solidhat
+                    # or yarn create solidhat
+```
+
 ## Installation
 
 This project uses pnpm:
