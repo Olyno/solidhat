@@ -1,0 +1,13 @@
+{
+  "name": "solidhat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm run -r build",
+    "watch": "pnpm run -r --parallel watch"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "create-solidhat",
+  "description": "Create a new solidhat project",
+  "license": "GPL-3.0-or-later",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "bin": "./dist/index.js",
+  "author": {
+    "name": "Olyno",
+    "url": "https://github.com/Olyno"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Olyno/solidhat.git",
+    "directory": "packages/create-solidhat"
+  },
+  "readme": "https://github.com/Olyno/solidhat.git#readme",
+  "bugs": {
+    "url": "https://github.com/Olyno/solidhat/issues"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "watch": "pnpm run build --watch src",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@solidhat/cli": "workspace:*",
+    "colorette": "^2.0.19",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2"
+  }
+}
