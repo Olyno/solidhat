@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "pnpm run -r build",
-    "watch": "pnpm run -r --parallel watch"
+    "watch": "pnpm run -r --parallel watch",
+    "format": "prettier --write '**/*.{ts,json,md,yml,yaml}'"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
